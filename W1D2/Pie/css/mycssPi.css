@@ -12,6 +12,7 @@ h2{
 }
 body{
     background-color: white;
+    color: #404040;
     font-size: 11pt;
     font-family: Georgia,Garamond,serif;
     background-image:url("../image/silverware.jpg") ;
@@ -27,4 +28,7 @@ body{
 }
 ul{
     list-style-image: url("../image/pie_bullet.png");
+}
+a{
+    color: #A4A400;
 }
