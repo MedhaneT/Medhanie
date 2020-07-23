@@ -7,5 +7,9 @@ h2{
     color: dodgerblue;
 }
 body{
-    background-color: dimgrey;
+    background-color: rgb(98, 128, 78);
+}
+a:link{
+color: black;
+font-family: sans-serif;
 }
