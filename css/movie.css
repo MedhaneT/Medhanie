@@ -3,7 +3,7 @@ ul {
 }
 header {
     height: 50px;
-    background-image: url(../images/bannerbg.png);
+    background-image: url(../images/tmntImages/bannerbg.png);
     background-repeat: repeat;
 }
 #top-of-page {
@@ -15,7 +15,7 @@ html, body {
     margin: 0;
 }
 body {
-    background-image: url(../images/background.png);
+    background-image: url(../images/tmntImages/background.png);
     background-repeat: repeat;
 }
 h2 {
@@ -42,7 +42,7 @@ h2 {
     font-size: 48pt;
     font-weight: bold;
     color: red;
-    background-image: url(../images/rbg.png);
+    background-image: url(../images/tmntImages/rbg.png);
     background-repeat: repeat;
     height: 83px;
     margin-bottom: 5px;
