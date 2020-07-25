@@ -72,8 +72,8 @@ function myFunctionTest(expected,found){
         return "TEST FAILED. EXPECTED "+ expected +" FOUND "+ found;
     }
 }
-function myFunctionTest(expected,found){
-    if(expected===found){
+function myFunctionTest1(expected,found){
+    if(expected==found){
         return "TEST SUCCEEDED";
     }else{
         return "TEST FAILED. EXPECTED "+ expected +" FOUND "+ found;
@@ -88,7 +88,7 @@ console.log("EXPECTED OUTPUT OF sum([2,3,5]) IS 10 "+ myFunctionTest(10,sum([2,3
 console.log("EXPECTED OUTPUT OF multiple([2,3,5]) IS 30 "+ myFunctionTest(30,multiple([2,3,5])));
 console.log("EXPECTED OUTPUT OF reverse('good') IS  doog "+ myFunctionTest('doog',reverse('good')));
 console.log("EXPECTED OUTPUT OF findLongestWords([sam,medhane, miki]) IS  medhane "+ myFunctionTest("medhane",findLongestWords(["sam","medhane","miki"])));
-console.log("EXPECTED OUTPUT OF filterLongWords([sam,medhane, miki],5) IS  medhane "+ myFunctionTest('medhane',filterLongWords(['sam','medhane','miki'],5)));
+console.log("EXPECTED OUTPUT OF filterLongWords([sam,medhane, miki],5) IS  medhane "+ myFunctionTest1('medhane',filterLongWords(['sam','medhane','miki'],5)));
 
 
 
