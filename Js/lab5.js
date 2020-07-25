@@ -72,6 +72,13 @@ function myFunctionTest(expected,found){
         return "TEST FAILED. EXPECTED "+ expected +" FOUND "+ found;
     }
 }
+function myFunctionTest(expected,found){
+    if(expected===found){
+        return "TEST SUCCEEDED";
+    }else{
+        return "TEST FAILED. EXPECTED "+ expected +" FOUND "+ found;
+    }
+}
 
 console.assert((myFunctionTest(10, max(20, 10)))=="TEST SUCCEEDED",'Failed assert test');
 console.log("EXPECTED OUTPUT OF MAX(30,20) IS 30 "+ myFunctionTest(30,max(30,20)));
