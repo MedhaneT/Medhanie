@@ -7,7 +7,7 @@ window.onload= function() {
     document.getElementById("decoration_checkbox").onchange = function() {
         let isChecked = document.getElementById("decoration_checkbox").checked;
         if (isChecked) {
-            changeFCDI("bold", "green", "underline", "url(hundred-dollar-bill.jpg)");
+            changeFCDI("bold", "green", "underline", "url(http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg)");
         } else {
             changeFCDI("normal", "black", "none", "none");
         }
