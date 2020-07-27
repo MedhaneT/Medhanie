@@ -7,6 +7,7 @@ window.onload = function() {
     document.getElementById("animation").onchange = animation;
     document.getElementById("fontsize").onchange = fsize;
     document.getElementById("turbo").onchange = turbo;
+  
 };
 
 var animate = [];
