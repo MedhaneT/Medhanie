@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const arr = ['a', 'b', 'c'];
+        arr[0] = "sam";
+        arr[1] = "swa";
+        arr[2] = "meda";
+
+        arr.forEach(a => console.log(a + " ha ha ha"));
+        // aha ha ha
+        // bha ha ha
+        // cha ha ha
+        for (let i in arr) {
+            console.log(i)
+        }
+        for (let i of arr) {
+            console.log(i)
+        }
+        function f(x = [], y) {
+            
+            console.log(" x = " + x + " y = " + y);
+        }
+        f();
+        f(2)
+        f(2, 5)
+        function findmax() {
+            let max = 0;
+            for (let i = 0; i < arguments.length; i++) {
+
+                max += arguments[i];
+
+            }
+            return max;
+        }
+        let max1 = findmax(100, 2, 4, 5, 6, 8, 50);
+        let w1 = findmax(" meda ", " sam ", " swa ")
+        console.log(max1)
+        console.log(w1)
+
+        function sum(...more) {
+          // more.forEach(a => a.length)
+            let total = 0;
+
+            if (more.length > 0) {
+                for (let i = 0; i < more.length; i++) {
+                    total += more[i];
+                }
+            }
+            return total
+        }
+
+        let sum1 = sum(1, 2, 3, 4, 10);
+        console.log(sum1)
+
+        let a, b, c
+        a = [1, 2, 3];
+        b = " dog ";
+        c = [42, " cat "];
+        let d = a.concat(b, c)
+        let e =[... a, b, ...c]
+        console.log(e)
+        console.log(d)
+
+        let obj1 = { meda: ' nebsi', x : 99999}
+        let obj2 = { swa : ' swinziii', f : 100000}
+
+        let  sd = {...obj1}
+        let dd = {...obj1,...obj2}
+        console.log(sd)
+        console.log(dd)
+
+        let address =[ 211 ," Baker st ", "London"]
+        let[houseno, ,city]= address;
+        console.log(houseno+ " "+ city)
+
+        let address1 ={ add:800, st: " court st", cit:" fairfield"};
+        let{add,cit}= address1
+        console.log( cit)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
