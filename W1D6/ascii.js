@@ -1,13 +1,13 @@
 
 "use strict";
 
-window.onload = function() {
+window.onload = function () {
     document.getElementById("start").onclick = ftimer;
     document.getElementById("stop").onclick = stop;
     document.getElementById("animation").onchange = animation;
     document.getElementById("fontsize").onchange = fsize;
     document.getElementById("turbo").onchange = turbo;
-  
+
 };
 
 var animate = [];
@@ -24,8 +24,8 @@ function start() {
     }
     document.getElementById("stop").disabled = false;
     document.getElementById("start").disabled = true;
-    document.getElementById("animation").disabled = true;    
-    document.getElementById("turbo").disabled = false;    
+    document.getElementById("animation").disabled = true;
+    document.getElementById("turbo").disabled = false;
 
 
 }
@@ -39,7 +39,7 @@ function ftimer() {
 function stop() {
     document.getElementById("stop").disabled = true;
     document.getElementById("start").disabled = false;
-    document.getElementById("animation").disabled = false;    
+    document.getElementById("animation").disabled = false;
     clearInterval(timer);
     timer = null;
     document.getElementById("text-area").value = frame;
@@ -66,9 +66,9 @@ function fsize() {
 function turbo() {
     var check = document.getElementById("turbo").checked;
     clearInterval(timer);
-    if (check){
+    if (check) {
         timer = setInterval(start, 50);
-    }else{
-        timer = setInterval(start, 250);      
+    } else {
+        timer = setInterval(start, 250);
     }
 }
