@@ -305,23 +305,25 @@
         // }
         // Employee.setAddress("2000 N tcours St.");
 
-        // var a = 10;
-        // var b = 8;
-        // function x(a){
-        //     console.log(a,b,c);
-        //     var b = function(c){
-        //         console.log(a,b,c,this)
-        //     }
-        //     if(a>=10){
-        //         a = a * 2;
-        //     }
-        //     c = 5;
-        //     console.log(a,b,c);
-        //     return {hello : b };
-        // }
-        // var c = 3;
-        // z = x(b);
-        // z.hello();
+        var a = 10;
+        var b = 8;
+        function x(a){
+            console.log(a,b,c);
+             var b= function  (c){
+                console.log(a,b,c,this)
+            }
+            if(a>=10){
+                a = a * 2;
+            }
+             c = 5;
+            console.log(a,b,c);
+            return {
+                hello : b 
+                };
+        }
+        var c = 3;
+        z = x(b);
+        z.hello();
 
         // let Validater = (function () {
         //     function validateFirstName() {
@@ -338,31 +340,31 @@
         //         }
 
         // })();
-
-        const spinner = (function() {
+// **********************************************************************
+        // const spinner = (function() {
             
-            let arr = ['-', '/']
-            let index = 0;
-            function timer() {
-                document.getElementById("spinner").innerHTML = arr[index++];
-                if (index === arr.length) index = 0;
-            }
+        //     let arr = ['-', '/']
+        //     let index = 0;
+        //     function timer() {
+        //         document.getElementById("spinner").innerHTML = arr[index++];
+        //         if (index === arr.length) index = 0;
+        //     }
 
-            function show() {
-                document.getElementById("loading").display = "block";
-                setInterval(timer, 250);
-            }
+        //     function show() {
+        //         document.getElementById("loading").display = "block";
+        //         setInterval(timer, 250);
+        //     }
 
-            function hide() {
-                clearInterval();
-                document.getElementById("loading").display = "none";
-            }
+        //     function hide() {
+        //         clearInterval();
+        //         document.getElementById("loading").display = "none";
+        //     }
 
-            return {
-                show: show,
-                hide: hide
-            }
-        })();
+        //     return {
+        //         show: show,
+        //         hide: hide
+        //     }
+        // })();
 
 
     </script>

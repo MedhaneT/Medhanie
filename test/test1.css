@@ -1,0 +1,43 @@
+
+
+div { border: 1px solid black; } 
+
+
+/* ******************************************** */
+
+#a { width: 1000px; height: 500px;}
+#b { 
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;   
+   }
+#c { float: right;}
+
+
+/* ***************************************** */
+
+#a { position: relative; }
+#C { 
+    float:none; 
+    position: absolute;
+     left:50%;
+
+      bottom: 250px;
+    }
+
+#d { position: relative;
+     top: 250px; 
+     left: 250px;
+    } 
+
+    /* ********************************************* */
+
+#b {
+     position: static;
+     margin: 100px;
+    }
+
+#d {
+     position: absolute;
+    }
