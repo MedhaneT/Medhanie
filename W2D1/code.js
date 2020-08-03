@@ -15,15 +15,15 @@ function filterLongWords(word = [], i) {
   return word.filter(e => e.length > i);
 }
 
-function longestNoSpace(...words) {
-  return words.filter((e) => {
-    return e.indexOf(" ") < 0;
-  })
-    .map((e) => e.length)
-    .reduce((x, y) => {
-      return if (x > y) {
-        return x;
-      } else
-        return y;
-    }, 0)
-}
+// function longestNoSpace(...words) {
+//   return words.filter((e) => {
+//     return e.indexOf(" ") < 0;
+//   })
+//     .map((e) => e.length)
+//     .reduce((x, y) => {
+//       return if (x > y) {
+//         return x;
+//       } else
+//         return y;
+//     }, 0)
+// }
