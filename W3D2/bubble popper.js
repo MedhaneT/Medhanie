@@ -13,7 +13,11 @@ $(function () {
 
         let num = $('#number').val();
 
-        $('.circle').show().css({ "height": width, "width": width, "top": "200px", "left": "50%" });
+        $('.circle').show().css({ 
+            "height": width, 
+            "width": width,
+             "top": "200px",
+              "left": "50%" });
 
         let count = parseInt($('#number').val());
 
