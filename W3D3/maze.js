@@ -1,4 +1,4 @@
-var count = 0;
+var counter = 0;
 var reset = 0;
 
 $(function () {
@@ -24,7 +24,7 @@ function turnRed() {
 
 
 function endPoint() {
-    if (count == 0 && reset > 0) {
+    if (counter == 0 && reset > 0) {
         $("#status").text("You won");
     }
 
