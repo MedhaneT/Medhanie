@@ -76,4 +76,8 @@ $(function () {
 
     }
 
+    $('#stop').click(function(){
+        $('.circle').stop();
+    })
+
 });
