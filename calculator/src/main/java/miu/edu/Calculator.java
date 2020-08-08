@@ -12,15 +12,9 @@ import java.io.PrintWriter;
 public class Calculator extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		// int op1=Integer.parseInt(request.getParameter("operand1"));
-		// int op2=Integer.parseInt(request.getParameter("operand2"));
-		// int result1=op1+op2;
-		// int op3=Integer.parseInt(request.getParameter("operand3"));
-		// int op4=Integer.parseInt(request.getParameter("operand4"));
-        // int result2=op3*op4;
-        
+	
         out.print("<html><head><title>Test</title></head><body>" );
-        out.print("<h3>Simple Calculator Lab</h3>");
+        out.print("<h3> Calculator Lab</h3>");
         out.print("<form method='post'>");
         try {
             if ((request.getParameter("operand1") != null) && (request.getParameter("operand2") != null)) {
