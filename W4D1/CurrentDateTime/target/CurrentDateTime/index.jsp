@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html;
 charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix='ct' uri='/WEB-INF/tlds/DateTime'%>
+<%@ taglib prefix='ct' uri='/WEB-INF/tlds/CurrentDateTime'%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@ charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
     <title>Document</title>
 </head>
 <body>
- 	<ct:CurrentDateTime color="green" size="22px" />
+ 	<ct:currentDateTime color="blue" size="22px" />
     
 </body>
 </html>
