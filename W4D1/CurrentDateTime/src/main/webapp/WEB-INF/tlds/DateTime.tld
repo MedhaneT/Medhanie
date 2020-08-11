@@ -1,0 +1,23 @@
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/webjsptaglibrary_2_1.xsd">
+	<tlib-version>1.0</tlib-version>
+	<uri>/WEB-INF/tlds/DateTime</uri>
+	<tag>
+		<description>Generates current date and time</description>
+		<name>currentDateTime</name>
+		<tag-class>miu.edu.CurrentDateTime</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>color</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>size</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
